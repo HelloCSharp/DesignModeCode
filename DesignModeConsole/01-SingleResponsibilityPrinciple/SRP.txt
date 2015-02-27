@@ -1,0 +1,2 @@
+﻿单一职责原则的定义是：应该有且仅有一个原因引起类的变更。
+There should never bo more than one resaon for a class to change.

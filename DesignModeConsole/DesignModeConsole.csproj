@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6961A526-7A97-49A0-8A93-8536605815D7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignModeConsole</RootNamespace>
+    <AssemblyName>DesignModeConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="02-LiskovSubstitutionPrinciple\AbstractGun.cs" />
+    <Compile Include="02-LiskovSubstitutionPrinciple\AUG.cs" />
+    <Compile Include="02-LiskovSubstitutionPrinciple\Handgun.cs" />
+    <Compile Include="02-LiskovSubstitutionPrinciple\LSPTest.cs" />
+    <Compile Include="02-LiskovSubstitutionPrinciple\MachineGun.cs" />
+    <Compile Include="02-LiskovSubstitutionPrinciple\Rifle.cs" />
+    <Compile Include="02-LiskovSubstitutionPrinciple\Snipper.cs" />
+    <Compile Include="02-LiskovSubstitutionPrinciple\Soldier.cs" />
+    <Compile Include="03-DependenceInversionPrinciple\Benz.cs" />
+    <Compile Include="03-DependenceInversionPrinciple\BMW.cs" />
+    <Compile Include="03-DependenceInversionPrinciple\DIPClient.cs" />
+    <Compile Include="03-DependenceInversionPrinciple\Driver.cs" />
+    <Compile Include="03-DependenceInversionPrinciple\ICar.cs" />
+    <Compile Include="03-DependenceInversionPrinciple\IDriver.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\AbstractSearcher.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\GoodBodyGirl.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\IGoodBodyGirl.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\IGreatTemperamentGirl.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\IPettyGirl.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\ISPTest.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\PettyGirl.cs" />
+    <Compile Include="04-InterfaceSegregationPrinciple\Searcher.cs" />
+    <Compile Include="06-OpenClosedPrinciple\BookStore.cs" />
+    <Compile Include="06-OpenClosedPrinciple\ComputerBook.cs" />
+    <Compile Include="06-OpenClosedPrinciple\IBook.cs" />
+    <Compile Include="06-OpenClosedPrinciple\IComputerBook.cs" />
+    <Compile Include="06-OpenClosedPrinciple\NovelBook.cs" />
+    <Compile Include="06-OpenClosedPrinciple\OffNovelBook.cs" />
+    <Compile Include="08-FactoryMethod\AbstractHumanFactory.cs" />
+    <Compile Include="08-FactoryMethod\BlackHuman.cs" />
+    <Compile Include="08-FactoryMethod\Human.cs" />
+    <Compile Include="08-FactoryMethod\HumanFactory.cs" />
+    <Compile Include="08-FactoryMethod\NvWa.cs" />
+    <Compile Include="08-FactoryMethod\WhiteHuman.cs" />
+    <Compile Include="08-FactoryMethod\YellowHuman.cs" />
+    <Compile Include="09-AbstractFactory\AbstractBlackHuman.cs" />
+    <Compile Include="09-AbstractFactory\AbstractWhiteHuman.cs" />
+    <Compile Include="09-AbstractFactory\AbstractYellowHuman.cs" />
+    <Compile Include="09-AbstractFactory\FemaleBlackHuman.cs" />
+    <Compile Include="09-AbstractFactory\FemaleFactory.cs" />
+    <Compile Include="09-AbstractFactory\FemaleWhiteHuman.cs" />
+    <Compile Include="09-AbstractFactory\FemaleYellowHuman.cs" />
+    <Compile Include="09-AbstractFactory\Human.cs" />
+    <Compile Include="09-AbstractFactory\HumanFactory.cs" />
+    <Compile Include="09-AbstractFactory\MaleBlackHuman.cs" />
+    <Compile Include="09-AbstractFactory\MaleFactory.cs" />
+    <Compile Include="09-AbstractFactory\MaleWhiteHuman.cs" />
+    <Compile Include="09-AbstractFactory\MaleYellowHuman.cs" />
+    <Compile Include="09-AbstractFactory\NvWa.cs" />
+    <Compile Include="10-TemplateMethodPattern\Client.cs" />
+    <Compile Include="10-TemplateMethodPattern\HummerH1Model.cs" />
+    <Compile Include="10-TemplateMethodPattern\HummerH2Model.cs" />
+    <Compile Include="10-TemplateMethodPattern\HummerModel.cs" />
+    <Compile Include="11-BuilderPattern\BenzBuilder.cs" />
+    <Compile Include="11-BuilderPattern\BenzModel.cs" />
+    <Compile Include="11-BuilderPattern\BMWBuilder.cs" />
+    <Compile Include="11-BuilderPattern\BMWModel.cs" />
+    <Compile Include="11-BuilderPattern\CarBuilder.cs" />
+    <Compile Include="11-BuilderPattern\CarModel.cs" />
+    <Compile Include="11-BuilderPattern\Client.cs" />
+    <Compile Include="11-BuilderPattern\Director.cs" />
+    <Compile Include="13-PrototypePattern\AdvTemplate.cs" />
+    <Compile Include="13-PrototypePattern\Client.cs" />
+    <Compile Include="13-PrototypePattern\Mail.cs" />
+    <Compile Include="14-MediatorPattern\AbstractColleague.cs" />
+    <Compile Include="14-MediatorPattern\AbstractMediator.cs" />
+    <Compile Include="14-MediatorPattern\Client.cs" />
+    <Compile Include="14-MediatorPattern\Mediator.cs" />
+    <Compile Include="14-MediatorPattern\Purchase.cs" />
+    <Compile Include="14-MediatorPattern\Sale.cs" />
+    <Compile Include="14-MediatorPattern\Stock.cs" />
+    <Compile Include="15-CommandPattern\AddRequirementCommand.cs" />
+    <Compile Include="15-CommandPattern\CancelDeletePageCommand.cs" />
+    <Compile Include="15-CommandPattern\Client.cs" />
+    <Compile Include="15-CommandPattern\CodeGroup.cs" />
+    <Compile Include="15-CommandPattern\Command.cs" />
+    <Compile Include="15-CommandPattern\DeletePageCommand.cs" />
+    <Compile Include="15-CommandPattern\Group.cs" />
+    <Compile Include="15-CommandPattern\Invoker.cs" />
+    <Compile Include="15-CommandPattern\PageGroup.cs" />
+    <Compile Include="15-CommandPattern\RequirementGroup.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="01-SingleResponsibilityPrinciple\SRP.txt" />
+    <Content Include="02-LiskovSubstitutionPrinciple\LSP.txt" />
+    <Content Include="03-DependenceInversionPrinciple\DIP.txt" />
+    <Content Include="04-InterfaceSegregationPrinciple\ISP.txt" />
+    <Content Include="05-LawOfDemeter\LoD.txt" />
+    <Content Include="06-OpenClosedPrinciple\OCP.txt" />
+    <Content Include="09-AbstractFactory\AbstractFactoryPattern.txt" />
+    <Content Include="10-TemplateMethodPattern\模板方法模式.txt" />
+    <Content Include="11-BuilderPattern\建造者模式.txt" />
+    <Content Include="13-PrototypePattern\原型模式.txt" />
+    <Content Include="14-MediatorPattern\中介者模式.txt" />
+    <Content Include="15-CommandPattern\命令模式.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
