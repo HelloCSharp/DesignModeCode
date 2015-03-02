@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DesignModeConsole.COR
 {
+    /// <summary>
+    /// 责任链模式
+    /// </summary>
     public class Client
     {
         public static void Test()
