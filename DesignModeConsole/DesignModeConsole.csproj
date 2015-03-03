@@ -136,6 +136,12 @@
     <Compile Include="17-DecoratorPattern\SchoolReport.cs" />
     <Compile Include="17-DecoratorPattern\SortDecorator.cs" />
     <Compile Include="17-DecoratorPattern\SugarFouthGradeSchoolReport.cs" />
+    <Compile Include="18-StrategyPattern\BackDoor.cs" />
+    <Compile Include="18-StrategyPattern\BlockEnemy.cs" />
+    <Compile Include="18-StrategyPattern\Context.cs" />
+    <Compile Include="18-StrategyPattern\GivenGreenLight.cs" />
+    <Compile Include="18-StrategyPattern\IStrategy.cs" />
+    <Compile Include="18-StrategyPattern\ZhaoYun.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -155,6 +161,7 @@
     <Content Include="15-CommandPattern\命令模式.txt" />
     <Content Include="16-ChainOfResponsibility\责任链模式.txt" />
     <Content Include="17-DecoratorPattern\装饰模式.txt" />
+    <Content Include="18-StrategyPattern\策略模式.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
