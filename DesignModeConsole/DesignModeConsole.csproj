@@ -129,6 +129,13 @@
     <Compile Include="16-ChainOfResponsibility\IWomen.cs" />
     <Compile Include="16-ChainOfResponsibility\Son.cs" />
     <Compile Include="16-ChainOfResponsibility\Women.cs" />
+    <Compile Include="17-DecoratorPattern\Decorator.cs" />
+    <Compile Include="17-DecoratorPattern\Father.cs" />
+    <Compile Include="17-DecoratorPattern\FouthGradeSchoolReport.cs" />
+    <Compile Include="17-DecoratorPattern\HighScoreDecorator.cs" />
+    <Compile Include="17-DecoratorPattern\SchoolReport.cs" />
+    <Compile Include="17-DecoratorPattern\SortDecorator.cs" />
+    <Compile Include="17-DecoratorPattern\SugarFouthGradeSchoolReport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -147,6 +154,7 @@
     <Content Include="14-MediatorPattern\中介者模式.txt" />
     <Content Include="15-CommandPattern\命令模式.txt" />
     <Content Include="16-ChainOfResponsibility\责任链模式.txt" />
+    <Content Include="17-DecoratorPattern\装饰模式.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

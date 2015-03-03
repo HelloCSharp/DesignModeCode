@@ -15,6 +15,8 @@ namespace DesignModeConsole
     {
         static void Main(string[] args)
         {
+            DesignModeConsole.DP.Father.Test();
+            return;
             DesignModeConsole.COR.Client.Test();
             return;
             DesignModeConsole.CP.Client.Test();
